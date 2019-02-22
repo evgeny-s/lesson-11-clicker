@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CountViewer = (props) => {
-  return <div className="card">
+const CountViewer = (props) => (
+  <div className="card">
     <div className="card-body">
       {props.value}
     </div>
-  </div>;
-};
+  </div>
+);
 
 CountViewer.propTypes = {
   value: PropTypes.string,
